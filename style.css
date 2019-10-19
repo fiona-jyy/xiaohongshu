@@ -1,0 +1,113 @@
+.masonry{
+  column-count:4;
+  column-gap:1em;
+}
+
+.item{
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+}
+
+.header-right{
+  margin-left:25px;
+  color:red;
+}
+
+.header-left{
+  display:flex;
+  justify-content: space-between;
+  width:300px;
+  margin-right:25px;
+}
+
+.card{
+font-size: 14px;
+}
+
+.card img{
+  border-radius: 6px;
+  width: 100%;
+}
+
+.profile {
+  font-size:12px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.user {
+  display: flex;
+  align-items: right;
+}
+
+.user img{
+  width:35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.like i{
+  margin-right: 10px;
+}
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* The Masonry Container */
+.masonry {
+  margin: 1.5em auto;
+  max-width: 768px;
+  column-gap: 1.5em;
+  column-count: 2;
+}
+
+/* The Masonry Brick */
+.item {
+  background: #fff;
+  padding: 1em;
+  margin: 0 0 1.5em;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+}
